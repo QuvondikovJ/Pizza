@@ -1,0 +1,44 @@
+.category {
+  padding: 0;
+  font-family: sans-serif;
+
+  .categories {
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline;
+
+      button {
+        border: 0;
+        outline: none;
+        font-size: 14px;
+        color: #2C2C2C;
+        font-weight: 700;
+        border-radius: 30px;
+        display: inline;
+        padding: 15px 25px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: background-color .2s linear;
+      }
+    }
+
+    li.active button,
+    li.active button:hover {
+      background-color: #282828;
+      color: #fff;
+    }
+
+    li button:hover {
+      background-color: darken(#F9F9F9, 10%);
+    }
+
+    li button:active {
+      background-color: darken(#F9F9F9, 12%);
+    }
+
+  }
+
+
+}

@@ -1,0 +1,148 @@
+.pizza_block {
+  width: 280px;
+  padding-bottom: 60px;
+  margin: 0 10px;
+
+  img {
+    width: 260px;
+    height: 260px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .pizza_name {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .pizza_details {
+    width: 100%;
+    padding: 6px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    margin: 0;
+
+    .pizza_type, .pizza_size {
+      display: flex;
+      padding: 0;
+      margin: 0;
+
+      li {
+        flex: 1 1 0;
+        padding: 8px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #2C2C2C;
+        border-radius: 5px;
+        list-style: none;
+        text-align: center;
+        cursor: pointer;
+        margin-right: 3px;
+      }
+
+      li:last-child {
+        margin-right: 0;
+      }
+
+      li.active {
+        background-color: #fff;
+      }
+
+      li.disabled {
+        opacity: .4;
+        pointer-events: none;
+      }
+
+    }
+
+    .pizza_type {
+      margin-bottom: 5px;
+    }
+  }
+
+  .pizza_footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pizza_price {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    button {
+      width: 160px;
+      color: #fe5f1e;
+      font-size: 16px;
+      background-color: #fff;
+      border: 1px solid #fe5f1e;
+      min-width: 100px;
+      border-radius: 30px;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color .2s linear,
+      color .2s linear;
+
+      .span_plus {
+        font-size: 18px;
+        display: block;
+        color: #fe5f1e;
+        font-weight: 700;
+        transition: color 0.2s linear;
+        margin-right: 6px;
+        //margin-top: 2px;
+      }
+
+      .span_count {
+        width: 22px;
+        height: 22px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FE5F1E;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 14px;
+        transition: background-color .2s linear,
+        color .2s linear;
+        margin-left: 5px;
+      }
+
+      .span_count.disabled {
+        display: none;
+      }
+
+      .span_count.disabled {
+        display: none;
+      }
+
+    }
+
+    button:hover {
+      background-color: #FE5F1E;
+      color: #fff;
+
+      .span_plus {
+        color: #fff;
+      }
+
+      .span_count {
+        background-color: #fff;
+        color: #FE5F1E;
+      }
+    }
+
+    button:active {
+      transform: translate3d(0, 1.2px, 0);
+    }
+  }
+
+}
